@@ -10,6 +10,9 @@
 バック
 `pip install -r requirements.txt`
 
+## buildしてup
+`docker-compose up --build`
+
 ## フロントとバックの立ち上げ
 ```
 docker-compose up -d
