@@ -3,6 +3,11 @@
 
 ## 最初にpullした後
 `docker-compose build`
+## 毎回pullした後
+フロント
+`yarn install`
+バック
+`pip install -r requirements.txt`
 
 ## フロントとバックの立ち上げ
 ```
