@@ -3,7 +3,3 @@ FROM node:alpine
 WORKDIR /usr/src/app
 
 RUN yarn global add @vue/cli && yarn global add @vue/cli-init
-
-COPY ./frontend/yarn.lock ./
-COPY ./frontend/package.json ./
-RUN yarn install
