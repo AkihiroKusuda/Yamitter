@@ -27,3 +27,8 @@ cd ./backend
 docker-compose exec flask bash
 python app.py
 ```
+## docker containerの停止
+`docker-compose stop`
+
+## 全部のdocker containerを削除
+`docker rm $(docker ps -aq)`
