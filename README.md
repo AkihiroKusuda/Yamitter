@@ -17,7 +17,7 @@ docker-compose up -d
 フロント
 ```
 cd ./frontend
-docker-compose exec vue /bin/sh
+docker-compose exec vue sh
 yarn run build
 yarn run dev
 ```
