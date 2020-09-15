@@ -4,7 +4,7 @@
 ## 最初にpullした後
 `docker-compose build`
 
-##フロントとバックの立ち上げ
+## フロントとバックの立ち上げ
 ```
 docker-compose up -d
 ```
