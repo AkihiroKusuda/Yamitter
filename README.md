@@ -6,6 +6,7 @@
 ## 毎回pullした後
 フロント
 `yarn install`
+
 バック
 `pip install -r requirements.txt`
 
