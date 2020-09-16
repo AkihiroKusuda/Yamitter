@@ -44,3 +44,9 @@ python app.py
 ## git全般
 不要なリモートブランチ が増えてきた場合
 `git fetch -p`で削除できる
+
+## prettierで整形-->eslintで静的解析
+```
+$ prettier-eslint --write
+```
+https://qiita.com/kiida/items/405bb07c4b52bfee0219 を参考にcommitするときに自動で実行されるようにしたい。
