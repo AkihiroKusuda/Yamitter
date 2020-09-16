@@ -40,3 +40,7 @@ python app.py
 `yarn run command`
 
 たとえばeslint`yarn run eslint --fix`
+
+## git全般
+不要なリモートブランチ が増えてきた場合
+`git fetch -p`で削除できる
