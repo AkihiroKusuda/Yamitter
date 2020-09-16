@@ -50,3 +50,4 @@ python app.py
 $ prettier-eslint --write
 ```
 https://qiita.com/kiida/items/405bb07c4b52bfee0219 を参考にcommitするときに自動で実行されるようにしたい。
+'<img>'や'<br>'が/'>'を持たないことにwarningを出すが、'<img ... />'のようにすることで解決できるため、prettierの設定で対応したい
