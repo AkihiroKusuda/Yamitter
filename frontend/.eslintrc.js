@@ -7,6 +7,7 @@ module.exports = {
   },
   env: {
     browser: true,
+    node: true
   },
   extends: [
     //'plugin:vue/essential', 
@@ -20,6 +21,7 @@ module.exports = {
   ],
   // required to lint *.vue files
   plugins: [
+    'prettier',
     'vue',
   ],
   // add your custom rules here
