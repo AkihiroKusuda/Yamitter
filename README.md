@@ -38,5 +38,5 @@ python app.py
 
 ## Yarnで入れたパッケージを動かす
 `yarn run command`
-たとえばeslint
-`yarn run eslint --fix`
+
+たとえばeslint`yarn run eslint --fix`
