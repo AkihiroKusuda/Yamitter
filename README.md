@@ -35,3 +35,8 @@ python app.py
 
 ## 全部のdocker containerを削除
 `docker rm $(docker ps -aq)`
+
+## Yarnで入れたパッケージを動かす
+`yarn run command`
+たとえばeslint
+`yarn run eslint --fix`
