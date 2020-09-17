@@ -63,3 +63,8 @@ $ git fetch -p
 ```
 $ prettier-eslint --write
 ```
+
+## yarnの設定とか
+```
+$ yarn config set ignore-optional true
+```
