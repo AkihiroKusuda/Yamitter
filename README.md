@@ -63,3 +63,8 @@ $ git fetch -p
 ```
 $ prettier-eslint --write
 ```
+
+## yarnの設定とか
+```
+/usr/src/app/frontend # 
+```
