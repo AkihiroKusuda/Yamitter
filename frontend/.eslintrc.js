@@ -20,13 +20,13 @@ module.exports = {
     //'standard',
     //'eslint:recommended',
     //'plugin:prettier/recommended',
-    'plugin:vue/recommended',
     'vue',
+    'plugin:vue/recommended',
     'prettier',
     'prettier/vue',
   ],
   // required to lint *.vue files
-  plugins: ['prettier', 'vue'],
+  plugins: [],
   // add your custom rules here
   rules: {},
 };

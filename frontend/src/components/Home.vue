@@ -24,6 +24,7 @@ export default {
   created() {
     this.getRandom();
   },
+
   methods: {
     getRandom() {
       this.randomNum = this.getRandomNum();
