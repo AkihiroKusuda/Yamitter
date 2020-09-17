@@ -52,6 +52,10 @@ $ docker rm $(docker ps -aq)
 ```
 $ yarn run [package]
 ```
+linterに合わせてfixする
+```
+yarn run lint --fix
+```
 
 ## git全般
 不要なリモートブランチの削除
