@@ -66,5 +66,5 @@ $ prettier-eslint --write
 
 ## yarnの設定とか
 ```
-/usr/src/app/frontend # 
+$ yarn config set ignore-optional true
 ```
