@@ -13,33 +13,33 @@
 
 <!-- JavaScriptを記述 -->
 <script>
-import axios from "axios";
+import axios from 'axios';
 
 export default {
   data() {
     return {
-      randomNum: 0
+      randomNum: 0,
     };
+  },
+  created() {
+    this.getRandom();
   },
   methods: {
     getRandom() {
       this.randomNum = this.getRandomNum();
     },
     getRandomNum() {
-      const path = "http://localhost:5000/rand";
+      const path = 'http://localhost:5000/rand';
       axios
         .get(path)
-        .then(response => {
+        .then((response) => {
           this.randomNum = response.data.randomNum;
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
-    }
+    },
   },
-  created() {
-    this.getRandom();
-  }
 };
 </script>
 <!--一行空行を入れてください-->
