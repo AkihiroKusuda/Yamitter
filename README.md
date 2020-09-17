@@ -64,4 +64,12 @@ $ yarn run prettier-eslint --write
 $ git fetch -p
 ```
 
+## prettierで整形-->eslintで静的解析
+```
+$ prettier-eslint --write
+```
 
+## yarnの設定とか
+```
+$ yarn config set ignore-optional true
+```

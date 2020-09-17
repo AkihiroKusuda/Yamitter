@@ -4,32 +4,29 @@ module.exports = {
   root: true,
   parserOptions: {
     parser: 'babel-eslint',
-    "ecmaVersion": 7, 
-    "sourceType": "module",
-    "ecmaFeatures": {
-        "jsx": true
-    }
+    ecmaVersion: 7,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   env: {
     browser: true,
-    node: true
+    node: true,
   },
   extends: [
-    //'plugin:vue/essential', 
+    //'plugin:vue/essential',
     //'standard',
     //'standard',
     //'eslint:recommended',
     //'plugin:prettier/recommended',
-    //'plugin:vue/recommended',
-    "prettier",
-    "prettier/vue",
+    'vue',
+    'plugin:vue/recommended',
+    'prettier',
+    'prettier/vue',
   ],
   // required to lint *.vue files
-  plugins: [
-    'prettier',
-    'vue',
-  ],
+  plugins: [],
   // add your custom rules here
-  rules: {
-  }
-}
+  rules: {},
+};
