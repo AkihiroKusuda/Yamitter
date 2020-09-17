@@ -1,75 +1,96 @@
 # Yamitter
+
 コマンド，使い方をまとめておきます
 
 ## 最初にpullした後
+
+```bash
+docker-compose build
 ```
-$ docker-compose build
-```
+
 ## パッケージのインストール
+
 フロント
-```
-$ yarn install
+
+```bash
+yarn install
 ```
 
 バック
+
+```bash
+pip install -r requirements.txt
 ```
-$ pip install -r requirements.txt
-```
+
 ## docker
+
 ### buildしてup
+
+```bash
+docker-compose up --build
 ```
-$ docker-compose up --build
-```
+
 ### フロントとバックの立ち上げ
+
+```bash
+docker-compose up
 ```
-$ docker-compose up
-```
+
 フロント
+
+```bash
+docker-compose exec vue sh
+yarn run build
+yarn run dev
 ```
-$ docker-compose exec vue sh
-$ yarn run build
-$ yarn run dev
-```
+
 バック
-```
-$ docker-compose exec flask bash
-$ python app.py
+
+```bash
+docker-compose exec flask bash
+python app.py
 ```
 
 ### docker containerの停止
-```
-$ docker-compose stop
+
+```bash
+docker-compose stop
 ```
 
 ### 全部のdocker containerを削除
-```
-$ docker rm $(docker ps -aq)
+
+```bash
+docker rm $(docker ps -aq)
 ```
 
 ## Yarnで入れたパッケージを動かす
-```
-$ yarn run [package]
-```
-### linterに合わせてfixする
-```
-$ yarn run lint --fix
-```
-### prettierで整形-->eslintで静的解析
-```
-$ yarn run prettier-eslint --write
-```
-## git全般
-不要なリモートブランチの削除
-```
-$ git fetch -p
+
+```bash
+yarn run [package]
 ```
 
-## prettierで整形-->eslintで静的解析
+### linterに合わせてfixする
+
+```bash
+yarn run lint --fix
 ```
-$ prettier-eslint --write
+
+### prettierで整形-->eslintで静的解析
+
+```bash
+yarn run prettier-eslint --write
+```
+
+## git全般
+
+不要なリモートブランチの削除
+
+```bash
+git fetch -p
 ```
 
 ## yarnの設定とか
-```
-$ yarn config set ignore-optional true
+
+```bash
+yarn config set ignore-optional true
 ```
