@@ -5,7 +5,7 @@
 ```
 $ docker-compose build
 ```
-## 毎回pullした後
+## パッケージのインストール
 フロント
 ```
 $ yarn install
@@ -15,35 +15,33 @@ $ yarn install
 ```
 $ pip install -r requirements.txt
 ```
-
-## buildしてup
+## docker
+### buildしてup
 ```
 $ docker-compose up --build
 ```
-
-## フロントとバックの立ち上げ
+### フロントとバックの立ち上げ
 ```
-$ docker-compose up -d
+$ docker-compose up
 ```
 フロント
 ```
-$ cd ./frontend
 $ docker-compose exec vue sh
 $ yarn run build
 $ yarn run dev
 ```
 バック
 ```
-$ cd ./backend
 $ docker-compose exec flask bash
 $ python app.py
 ```
-## docker containerの停止
+
+### docker containerの停止
 ```
 $ docker-compose stop
 ```
 
-## 全部のdocker containerを削除
+### 全部のdocker containerを削除
 ```
 $ docker rm $(docker ps -aq)
 ```
@@ -52,7 +50,14 @@ $ docker rm $(docker ps -aq)
 ```
 $ yarn run [package]
 ```
-
+### linterに合わせてfixする
+```
+$ yarn run lint --fix
+```
+### prettierで整形-->eslintで静的解析
+```
+$ yarn run prettier-eslint --write
+```
 ## git全般
 不要なリモートブランチの削除
 ```
