@@ -17,7 +17,6 @@ module.exports = {
   extends: [
     //'plugin:vue/essential',
     //'standard',
-    //'standard',
     //'eslint:recommended',
     //'plugin:prettier/recommended',
     'vue',
@@ -25,7 +24,6 @@ module.exports = {
     'prettier',
     'prettier/vue',
   ],
-  // required to lint *.vue files
   plugins: [],
   // add your custom rules here
   rules: {},
