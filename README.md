@@ -57,6 +57,16 @@ python app.py
 docker-compose stop
 ```
 
+### docker containerを再始動
+```
+docker start <containerName>
+```
+
+### containerでコマンドを実行する
+```
+docker exec -it <containerName> <command>
+```
+
 ### 全部のdocker containerを削除
 
 ```bash
@@ -90,6 +100,7 @@ git fetch -p
 ```
 
 ## yarnの設定とか
+### オプショナルのパッケージを無視(推奨)
 
 ```bash
 yarn config set ignore-optional true
