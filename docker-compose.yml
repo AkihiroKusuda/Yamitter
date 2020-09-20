@@ -17,7 +17,7 @@ services:
       dockerfile: Dockerfile_node
     container_name: vue_container
     tty: true
-    command: sh -c 'cd ./frontend; pwd;yarn install --ignore-optional; yarn run build; yarn dev'
+    command: bash -c 'cd ./frontend; pwd;yarn install --ignore-optional; yarn run build; yarn dev'
     volumes:
       - ./:/usr/src/app
     ports:
