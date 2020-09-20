@@ -39,7 +39,7 @@ docker-compose up
 フロント
 
 ```bash
-docker-compose exec vue sh
+docker-compose exec vue bash
 yarn run build
 yarn run dev
 ```
